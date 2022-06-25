@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32210.238
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sand_A", "sand_A\sand_A.csproj", "{B2037C68-34ED-43F9-9303-D876BC8DA184}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sand_B", "contest_A\sand_B.csproj", "{FA335EBF-F75F-49DE-8D5D-58563D98D1CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2037C68-34ED-43F9-9303-D876BC8DA184}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2037C68-34ED-43F9-9303-D876BC8DA184}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2037C68-34ED-43F9-9303-D876BC8DA184}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2037C68-34ED-43F9-9303-D876BC8DA184}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA335EBF-F75F-49DE-8D5D-58563D98D1CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA335EBF-F75F-49DE-8D5D-58563D98D1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA335EBF-F75F-49DE-8D5D-58563D98D1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA335EBF-F75F-49DE-8D5D-58563D98D1CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C941138D-0A0C-4B3E-95EB-764E7D8F0649}
+	EndGlobalSection
+EndGlobal
