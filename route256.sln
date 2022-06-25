@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sand_A", "sand_A\sand_A.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sand_B", "contest_A\sand_B.csproj", "{FA335EBF-F75F-49DE-8D5D-58563D98D1CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sand_C", "sand_C\sand_C.csproj", "{027068BE-C471-4271-9A46-A157E99D4C2A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{FA335EBF-F75F-49DE-8D5D-58563D98D1CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{FA335EBF-F75F-49DE-8D5D-58563D98D1CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{FA335EBF-F75F-49DE-8D5D-58563D98D1CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{027068BE-C471-4271-9A46-A157E99D4C2A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{027068BE-C471-4271-9A46-A157E99D4C2A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{027068BE-C471-4271-9A46-A157E99D4C2A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{027068BE-C471-4271-9A46-A157E99D4C2A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

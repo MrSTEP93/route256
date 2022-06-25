@@ -57,7 +57,7 @@ namespace sand_B
                 output += sum.ToString() + "\n";
             }
             Console.WriteLine(output);
-            Console.ReadLine();
+            //Console.ReadLine();
         }
     }
 }
