@@ -80,5 +80,5 @@ for (short i = 0; i < setsCount; i++)
 }
 
 //Console.WriteLine("\n Summary:");
-Console.WriteLine(output.ToString());
+//Console.WriteLine(output.ToString());
 //Console.ReadLine();
