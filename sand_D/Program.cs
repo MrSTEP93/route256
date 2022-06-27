@@ -23,25 +23,37 @@
 */
 
 using System.Text;
+using System.Text.RegularExpressions;
 
 int setsCount;
 int.TryParse(Console.ReadLine(), out setsCount);
 StringBuilder output = new StringBuilder();
+string login = "";
+string pattern = ("[0-9a-zA-Z_][0-9a-zA-Z_-]{1,23}");
 
 for (short i = 0; i < setsCount; i++)
 {
-    Console.ReadLine();
+    //Console.ReadLine();
     int n;
 
     //string input = Console.ReadLine();
     string[] splitted = Console.ReadLine().Split(" ");
     int.TryParse(splitted[0], out n);
 
-
-    output.AppendLine();
-    foreach (var row in table)
+    for (short j = 0; j < n; j++)
     {
-        output.Append(num + " ");
-        output.AppendLine();
+        login = Console.ReadLine();
+        if (Regex.IsMatch(login, pattern, RegexOptions.IgnoreCase))
+        {
+            output.AppendLine("YES");
+        } else
+        {
+            output.AppendLine("NO");
+        }
     }
+    output.AppendLine();
 }
+
+Console.WriteLine("\n Summary:");
+Console.WriteLine(output.ToString());
+Console.ReadLine();
