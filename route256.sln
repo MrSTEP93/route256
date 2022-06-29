@@ -7,9 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sand_A", "sand_A\sand_A.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sand_B", "contest_A\sand_B.csproj", "{FA335EBF-F75F-49DE-8D5D-58563D98D1CE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sand_C", "sand_C\sand_C.csproj", "{027068BE-C471-4271-9A46-A157E99D4C2A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sand_C", "sand_C\sand_C.csproj", "{027068BE-C471-4271-9A46-A157E99D4C2A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sand_D", "sand_D\sand_D.csproj", "{5FF01C33-86C9-4D85-AF3C-32CEC32A13FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "sand_D", "sand_D\sand_D.csproj", "{5FF01C33-86C9-4D85-AF3C-32CEC32A13FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "sand_E", "sand_E\sand_E.csproj", "{5142A835-799A-4334-99C8-158BBD4FDF3E}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{5FF01C33-86C9-4D85-AF3C-32CEC32A13FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5FF01C33-86C9-4D85-AF3C-32CEC32A13FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5FF01C33-86C9-4D85-AF3C-32CEC32A13FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5142A835-799A-4334-99C8-158BBD4FDF3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5142A835-799A-4334-99C8-158BBD4FDF3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5142A835-799A-4334-99C8-158BBD4FDF3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5142A835-799A-4334-99C8-158BBD4FDF3E}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
