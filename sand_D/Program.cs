@@ -29,23 +29,33 @@ int setsCount;
 int.TryParse(Console.ReadLine(), out setsCount);
 StringBuilder output = new StringBuilder();
 string login = "";
-string pattern = ("[0-9a-zA-Z_][0-9a-zA-Z_-]{1,23}");
+//string pattern = ("[0-9a-zA-Z_][0-9a-zA-Z_-]{1,23}");
+Regex rule = new("^[0-9a-zA-Z_][0-9a-zA-Z_-]{1,23}$");
 
 for (short i = 0; i < setsCount; i++)
 {
     //Console.ReadLine();
-    int n;
-
     //string input = Console.ReadLine();
+
+    List<string> busy = new List<string>();
+
     string[] splitted = Console.ReadLine().Split(" ");
-    int.TryParse(splitted[0], out n);
+    int.TryParse(splitted[0], out int n);
 
     for (short j = 0; j < n; j++)
     {
         login = Console.ReadLine();
-        if (Regex.IsMatch(login, pattern, RegexOptions.IgnoreCase))
+        //if (Regex.IsMatch(login, pattern, RegexOptions.IgnoreCase))
+        if (rule.IsMatch(login))
         {
-            output.AppendLine("YES");
+            if (busy.Contains(login.ToLower()))
+            {
+                output.AppendLine("NO");
+            } else
+            {
+                output.AppendLine("YES");
+                busy.Add(login.ToLower());
+            }
         } else
         {
             output.AppendLine("NO");
@@ -54,6 +64,6 @@ for (short i = 0; i < setsCount; i++)
     output.AppendLine();
 }
 
-Console.WriteLine("\n Summary:");
+//Console.WriteLine("\n Summary:");
 Console.WriteLine(output.ToString());
-Console.ReadLine();
+//Console.ReadLine();
