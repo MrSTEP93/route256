@@ -64,10 +64,6 @@ for (short i = 0; i < setsCount; i++)
     for (short j = 0; j < n; j++)
     {
         string[] record = Console.ReadLine().Split(" ");
-        if (record[0].Equals("f"))
-        {
-           // panic
-        }
         if (book.ContainsKey(record[0]))
         {
             int numberCount = book[record[0]].Where(x => x == ' ').Count();
@@ -85,12 +81,8 @@ for (short i = 0; i < setsCount; i++)
                 numberCount++;
             }
 
-            //    //book[record[0]] += " " + record[1];
-            //    //book[record[0]] = string.Concat((numberCount + 1).ToString(), book[record[0]].AsSpan(1));
-            //}
-            //book[record[0]] = string.Concat((numberCount + 1).ToString(), " " + record[1], book[record[0]].AsSpan(1,((numberCount - 1) * digits)));
-            book[record[0]] = book[record[0]].Remove(0, 2);
-            book[record[0]] = book[record[0]].Insert(0, numberCount + " " + record[1] + " ");
+            book[record[0]] = book[record[0]].Remove(0, 1);
+            book[record[0]] = book[record[0]].Insert(0, numberCount + " " + record[1]);
 
         } else
         {
