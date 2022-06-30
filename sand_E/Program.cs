@@ -47,6 +47,7 @@
 using System.Text;
 using System;
 
+const int digits = 7 + 1;
 int setsCount;
 int.TryParse(Console.ReadLine(), out setsCount);
 StringBuilder output = new StringBuilder();
@@ -63,17 +64,34 @@ for (short i = 0; i < setsCount; i++)
     for (short j = 0; j < n; j++)
     {
         string[] record = Console.ReadLine().Split(" ");
+        if (record[0].Equals("f"))
+        {
+           // panic
+        }
         if (book.ContainsKey(record[0]))
         {
             int numberCount = book[record[0]].Where(x => x == ' ').Count();
-            if (numberCount < 5)
+            if (numberCount >= 5)
             {
-                if (!book[record[0]].Contains(record[1]))
-                {
-                    book[record[0]] += " " + record[1];
-                    book[record[0]] = string.Concat((numberCount + 1).ToString(), book[record[0]].AsSpan(1));
-                }
+                numberCount--;
+                book[record[0]] = book[record[0]].Remove(numberCount * digits + 1);
             }
+            if (book[record[0]].Contains(record[1]))
+            {
+                book[record[0]] = book[record[0]].Remove(book[record[0]].IndexOf(record[1]) - 1, digits);
+            }
+            else
+            {
+                numberCount++;
+            }
+
+            //    //book[record[0]] += " " + record[1];
+            //    //book[record[0]] = string.Concat((numberCount + 1).ToString(), book[record[0]].AsSpan(1));
+            //}
+            //book[record[0]] = string.Concat((numberCount + 1).ToString(), " " + record[1], book[record[0]].AsSpan(1,((numberCount - 1) * digits)));
+            book[record[0]] = book[record[0]].Remove(0, 2);
+            book[record[0]] = book[record[0]].Insert(0, numberCount + " " + record[1] + " ");
+
         } else
         {
             book.Add(record[0], "1 " + record[1]);
