@@ -52,7 +52,7 @@ int setsCount;
 int.TryParse(Console.ReadLine(), out setsCount);
 StringBuilder output = new StringBuilder();
 
-for (short i = 0; i < setsCount; i++)
+for (int i = 0; i < setsCount; i++)
 {
     //Console.ReadLine();
     //string input = Console.ReadLine();
@@ -61,23 +61,31 @@ for (short i = 0; i < setsCount; i++)
     string[] splitted = Console.ReadLine().Split(" ");
     int.TryParse(splitted[0], out int n);
 
-    for (short j = 0; j < n; j++)
+    for (int j = 0; j < n; j++)
     {
-        string[] record = Console.ReadLine().Split(" ");
+        string input = Console.ReadLine() ?? string.Empty;
+        if (string.IsNullOrEmpty(input))
+        {
+            continue;
+        }
+
+        string[] record = input.Split(" ");
+        //if ((record[0] == "a") && (j == 5))
+        //{
+        //    //alarm;
+        //}
         if (book.ContainsKey(record[0]))
         {
             int numberCount = book[record[0]].Where(x => x == ' ').Count();
-            if (numberCount >= 5)
-            {
-                numberCount--;
-                book[record[0]] = book[record[0]].Remove(numberCount * digits + 1);
-            }
             if (book[record[0]].Contains(record[1]))
             {
                 book[record[0]] = book[record[0]].Remove(book[record[0]].IndexOf(record[1]) - 1, digits);
-            }
-            else
-            {
+            } else {
+                if (numberCount >= 5)
+                {
+                    numberCount--;
+                    book[record[0]] = book[record[0]].Remove(numberCount * digits + 1);
+                }
                 numberCount++;
             }
 
