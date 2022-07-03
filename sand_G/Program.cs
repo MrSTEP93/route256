@@ -8,23 +8,25 @@ for (int i = 0; i < setsCount; i++)
 {
     //Dictionary<string, bool> isPackageInstalled = new();
     Dictionary<string, Package> packages = new();
+    int istallationsCount = 0;
     Console.ReadLine();
     
     void Install(string module)
     {
-
         if (!packages[module].IsInstalled)
-        {
-            int i = 0;
-            if (packages[module].Depends.Length == 0)
+        { 
+            if (packages[module].DependsCount == 0)
             {
-                packages[module].MarkAsInstall();
+                packages[module].IsInstalled = true;
+                istallationsCount++;
                 output.Append(module + " ");
             }
             else
             {
-                Install(packages[module].Depends[i]);
-                i++;
+                foreach (var depend in packages[module].Depends)
+                {
+                    Install(depend);
+                }
             }
         }
     }
@@ -40,8 +42,12 @@ for (int i = 0; i < setsCount; i++)
         {
             continue;
         }
+        if (input == "database:")
+        {
+            // alarrm;
+        }
         splitted = input.Split(":");
-        packages.Add(splitted[0], new Package(splitted[1] ?? null));
+        packages.Add(splitted[0], new Package(string.IsNullOrEmpty(splitted[1]) ? null : splitted[1]));
         //packages[splitted[0]] = new()
         //{
         //    Depends = splitted[1] ?? string.Empty,
@@ -53,6 +59,7 @@ for (int i = 0; i < setsCount; i++)
     int.TryParse(splitted[0], out int q);                   // q :: количество запросов на компиляцию
     for (int k = 0; k < q; k++)
     {
+        istallationsCount = 0;
         string reqest = Console.ReadLine();
         Install(reqest);
     }
@@ -67,29 +74,28 @@ struct Package
 {
     private bool _isInstalled;
     private string[] _depends;
+    private int _dependsCount;
 
-    public bool IsInstalled { get => _isInstalled; private set => _isInstalled = value; }
+    public bool IsInstalled { get => _isInstalled; set => _isInstalled = value; }
     public string[] Depends { get => _depends; private set => _depends = value; }
+    public int DependsCount { get => _dependsCount; private set => _dependsCount = value; }
 
     public void MarkAsInstall()
     {
-        this.IsInstalled = true;
+        IsInstalled = true;
     }
 
     public Package(string deps)
     {
-        if (deps == "database")
-        {
-            // alarrm;
-        }
         _isInstalled = false;
         if (deps == null)
         {
             _depends = null;
+            _dependsCount = 0;
         } else
         {
             _depends = deps.Trim().Split(" ");
+            _dependsCount = _depends.Length;
         }
-        
     }
 }
