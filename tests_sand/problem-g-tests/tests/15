@@ -1,0 +1,184 @@
+10
+
+2
+aa:
+eambfl: aa
+9
+aa
+eambfl
+aa
+eambfl
+eambfl
+eambfl
+aa
+aa
+aa
+
+14
+ogrodkp:
+jsth: ogrodkp
+mije: ogrodkp jsth
+meb: jsth mije
+aaca: mije meb jsth ogrodkp
+xnb: ogrodkp
+ar: xnb aaca mije ogrodkp
+g: jsth
+h: jsth ar xnb ogrodkp meb mije
+e: meb ar xnb ogrodkp
+fbfadcc: mije aaca xnb
+a: h ogrodkp aaca e mije
+mceibcj: e aaca jsth mije h
+adbeeede: g a h aaca jsth
+3
+mceibcj
+mceibcj
+xnb
+
+8
+ucvn:
+a:
+furhbi:
+rnroosgb: ucvn
+ababd:
+beebaee: a
+heriesqk: a
+c:
+6
+furhbi
+heriesqk
+rnroosgb
+a
+a
+heriesqk
+
+3
+ici:
+bbabbabb:
+f: ici bbabbabb
+9
+f
+f
+bbabbabb
+ici
+ici
+ici
+ici
+bbabbabb
+f
+
+10
+fdcjgd:
+ahjl: fdcjgd
+i: ahjl fdcjgd
+aj: ahjl
+ka: fdcjgd i aj ahjl
+afkb: i ahjl aj fdcjgd ka
+e: ahjl afkb aj i ka
+jibhmb: i fdcjgd afkb aj e ahjl ka
+ifdgg: ka ahjl afkb e fdcjgd jibhmb
+abdcbcdb: ka e fdcjgd ahjl afkb ifdgg jibhmb
+4
+i
+ahjl
+jibhmb
+ifdgg
+
+13
+eddab:
+lpoqbe: eddab
+ffrsa: eddab lpoqbe
+baababaa: ffrsa lpoqbe eddab
+dfhecbaa: lpoqbe ffrsa
+p: eddab baababaa dfhecbaa ffrsa lpoqbe
+kibcb: lpoqbe p baababaa dfhecbaa eddab
+kide: ffrsa kibcb eddab baababaa p dfhecbaa
+afe: baababaa kibcb p ffrsa eddab kide lpoqbe
+rdcvkkps: baababaa dfhecbaa p ffrsa kide afe
+kf: baababaa kide afe p dfhecbaa eddab ffrsa lpoqbe
+eiaj: kide p kf eddab rdcvkkps afe dfhecbaa ffrsa baababaa
+djf: kibcb kide lpoqbe eiaj dfhecbaa p baababaa ffrsa rdcvkkps kf afe
+9
+eddab
+p
+ffrsa
+eiaj
+kibcb
+ffrsa
+rdcvkkps
+p
+kide
+
+11
+eibhhec:
+igl: eibhhec
+ccd: eibhhec igl
+ohenk: igl eibhhec ccd
+fc: ccd ohenk eibhhec igl
+cdafeec: ccd fc igl ohenk eibhhec
+aa: eibhhec igl ccd ohenk cdafeec fc
+i: ohenk igl cdafeec fc ccd eibhhec aa
+hn: cdafeec i aa eibhhec ccd igl fc ohenk
+cxjmb: ohenk cdafeec ccd eibhhec hn igl aa fc i
+baaab: cdafeec hn cxjmb igl aa eibhhec ccd i fc ohenk
+7
+aa
+ccd
+hn
+aa
+igl
+cxjmb
+igl
+
+11
+hcg:
+ts: hcg
+c: hcg
+aaaa: hcg ts
+amjh: ts
+aihdedf: hcg amjh aaaa ts
+j: amjh aaaa
+fab: aaaa j c aihdedf
+iio: fab hcg j c
+mf: ts c
+aj: aihdedf fab aaaa ts iio c j hcg
+2
+aihdedf
+fab
+
+10
+lglgc:
+aaa:
+b:
+ebeca: aaa
+cbdc: b ebeca
+stgodc: ebeca b
+aaaaaaa: ebeca cbdc stgodc
+giddd: aaa aaaaaaa lglgc
+cdbbcc: aaa stgodc
+bacccbbb: lglgc aaa cbdc stgodc
+8
+stgodc
+lglgc
+ebeca
+bacccbbb
+giddd
+b
+cdbbcc
+ebeca
+
+13
+cb:
+aeafcc: cb
+aa: cb aeafcc
+whlbhsr: aeafcc cb
+bdafa: aa whlbhsr cb aeafcc
+ecdb: aeafcc whlbhsr aa
+fcdcaf: aa cb ecdb aeafcc
+hfgdib: whlbhsr aeafcc fcdcaf cb aa
+vldbhh: ecdb bdafa hfgdib fcdcaf cb aeafcc
+kr: cb whlbhsr fcdcaf ecdb
+jj: kr aeafcc cb hfgdib vldbhh fcdcaf ecdb
+vhoncg: bdafa aa aeafcc kr fcdcaf hfgdib
+lcch: vldbhh bdafa ecdb cb aeafcc fcdcaf hfgdib kr aa vhoncg
+1
+aeafcc

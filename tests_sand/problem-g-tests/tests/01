@@ -1,0 +1,35 @@
+2
+
+7
+web: model commons
+model: database utils
+commons: utils json
+api: model commons
+database:
+utils:
+json:
+4
+web
+api
+web
+commons
+
+11
+tcp: util
+app: api widgets
+api: model rest
+widgets: json
+admin: db widgets
+model: db json util
+db:
+json: util
+util:
+rest: tcp
+tools:
+6
+rest
+widgets
+app
+admin
+tools
+rest
